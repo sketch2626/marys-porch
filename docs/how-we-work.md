@@ -63,7 +63,7 @@ Every hub, worker and brief follows this file. It holds the process: who runs wh
 ## Data, the browser and the screen (D15)
 - **Scratch data only.** Workers never read or write `%APPDATA%\CareIncidentLog`, Andy's real key or Andy Flow's `history.db`. Tests use `TRACKER_DATA` and the in-process server. To try a build, set `APPDATA` to a scratch folder and `TRACKER_PORT=8799` (`CLAUDE.md`, "Desktop app").
 - **Nothing on Andy's screen.** Not his Chrome, not computer use, and no desktop screenshots.
-- **Workers may render their own pages to a picture** with headless Edge and a throwaway profile, to check a layout or a board.
+- **Workers may render their own pages to a picture** with headless Edge and a throwaway profile, to check a layout or a board. Render one shot at a time and wait for it: Edge's launcher returns before its child processes finish, so a batch run from `sh` or Python starts them all at once and runs the laptop out of memory. In PowerShell, piping to `Out-Null` waits; elsewhere, wait for the output file. Look at every render before trusting it: a starved one can come out black with no error.
 - **The hub may use its built-in browser pane** without asking.
 - **Workers never launch the app or the `.bat` files.** When the hub launches Mary for Andy, it uses `packaging\.venv\Scripts\pythonw.exe desktop.py --mary` (`Start Mary.bat`'s way), because the system Python falls back to Chrome.
 - **The hub reads the real log through the `care-incident-log` MCP** (`mcp_server.py`), never through screenshots. The MCP is for Claude on Andy's machine only.
