@@ -67,6 +67,7 @@ The rest (M7's other games, M8, M11, M14, M29 and M30) fit in when Andy picks th
   - **The sky:** "it moves from evening to night and never really changes from evening or night… if it don't work out, we'll change it." It's evening through the day and night after dark, never a daytime sky.
   - **The weather** comes by talking it over, with the real radar or satellite picture on the side screen (the National Weather Service, free, no key). No live weather in the sky.
   - **Round 6 order:** the layout and light first (the lantern off the wall, the table beside the swing, closer in, the gentle moving camera, no glint), then a round of three faces side by side.
+- **Andy, on the three faces (2026-11-08):** "all three of those are horrendous. A is the best, obviously. The other two are scary and a big waste of my compute." He's looking elsewhere for inspiration, and the face work waits for what he brings back. The hub's read: all three were new paint on the same smooth egg head, so the head's shape is the place to start. The sheets are on `other/M24-scene` (`mockups/mary/round12/shots/r7-*`).
 
 ### M25. The porch radio: music when they ask (Andy, 2026-11-04)
 - **Andy's words:** "if they ask to listen to music or something, then Mary can reach over and turn the radio on and ask what they want to listen to. And then act like she's dialing it right into what they want to listen to."
